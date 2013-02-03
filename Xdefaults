@@ -1,0 +1,168 @@
+Xft.dpi:                    96
+Xft.antialias:            true
+Xft.hinting:              full
+!Xft.hintstyle:           hintslight
+Xft.hintstyle:            hintfull
+Xft.rgba:                  rgb
+
+urxvt.termName:          xterm
+urxvt.scrollBar:         false
+urxvt.imLocale:          en_US.UTF-8
+urxvt.loginShell:        true
+urxvt.saveLines:         512
+urxvt.boldMode:          false
+urxvt.inheritPixmap:     false
+urxvt.shading:           40
+urxvt.xftAntialias:      false
+urxvt.jumpScroll:        true
+urxvt.tintColor:         white
+urxvt.internalBorder:    0
+urxvt.cursorBlink:       true
+urxvt.cursorColor:       #a59461
+urxvt.cursorColor2:      #000000
+urxvt.colorBD:           #ffffff
+urxvt.colorIT:           #bbbbbb
+urxvt.colorUL:           #B45B00
+urxvt.underlineColor:    #B45B00
+urxvt.borderless:        true 
+
+URxvt.font:               xft:Source Code Pro:size=7
+URxvt.boldfont:           xft:Source Code Pro:size=7
+URxvt.letterSpace:        -1
+URxvt.perl-ext-common:    default,matcher
+URxvt.urlLauncher:        conkeror
+URxvt.matcher.button:     1
+
+*background:        #0F0E0F
+*foreground:        #A59461
+
+! Parker Brothers colors
+!black
+*color0:    #322a2c
+*color8:    #46423b
+!red
+*color1:    #79220E
+*color9:    #AA261F
+!green
+*color2:    #344B1B
+*color10:   #76550F
+!yellow
+!*color3:    #c77920
+*color3:    #B45B00
+*color11:   #B57F02
+!blue
+*color4:    #434045
+*color12:   #908862
+!magenta
+*color5:    #5C1E25
+*color13:   #624A35
+!cyan
+*color6:    #394745
+*color14:   #393E38
+!white
+*color7:    #AE8842
+*color15:   #A59058
+
+xclock*hourColor:       #B45B00
+xclock*minuteColor:     #A59461
+xclock*secondColor:     #5C1E25
+xclock*majorColor:      #0F0F0F
+xclock*minorColor:      #AE8842
+
+!*customization:     -color
+xcalc*ti.button1.vertDistance:          4
+xcalc*ti.button2.vertDistance:          4
+xcalc*ti.button3.vertDistance:          4
+xcalc*ti.button4.vertDistance:          4
+xcalc*ti.button5.vertDistance:          4
+xcalc*ti.background:                    #0F0F0F
+xcalc*ti.bevel.borderColor:             #B45B00
+xcalc*ti.bevel.borderWidth:             1
+xcalc*ti.bevel.vertDistance:            4
+xcalc*ti.bevel.defaultDistance:         0
+xcalc*ti.bevel.background:              #0F0F0F
+xcalc*ti.bevel.screen*background:       #0F0F0F
+xcalc*ti.bevel.screen.borderColor:      #0F0F0F
+xcalc*ti.bevel.screen.vertDistance:     10
+xcalc*ti.bevel.screen.horizDistance:    10
+xcalc*ti.bevel.screen*left:             chainLeft
+xcalc*ti.bevel.screen*right:            chainRight
+xcalc*ti.bevel.screen*top:              chainTop
+xcalc*ti.bevel.screen*bottom:           chainBottom
+xcalc*ti.bevel.screen*LCD.foreground:   #A59461
+xcalc*ti.bevel.screen*INV.vertDistance: 0
+xcalc*ti.Command.borderColor:           #B45B00
+xcalc*ti.Command.background:            #171717
+xcalc*ti.Command.foreground:            #A59451
+xcalc*ti.button5.background:            #202020
+xcalc*ti.button20.background:           #171717
+xcalc*ti.button25.background:           #171717
+xcalc*ti.button30.background:           #171717
+xcalc*ti.button35.background:           #171717
+xcalc*ti.button40.background:           #303030
+xcalc*ti.button22.background:           #0F0F0F
+xcalc*ti.button23.background:           #0F0F0F
+xcalc*ti.button24.background:           #0F0F0F
+xcalc*ti.button27.background:           #0F0F0F
+xcalc*ti.button28.background:           #0F0F0F
+xcalc*ti.button29.background:           #0F0F0F
+xcalc*ti.button32.background:           #0F0F0F
+xcalc*ti.button33.background:           #0F0F0F
+xcalc*ti.button34.background:           #0F0F0F
+xcalc*ti.button37.background:           #0F0F0F
+xcalc*ti.button38.background:           #0F0F0F
+xcalc*ti.button39.background:           #0F0F0F
+
+xmessage*form.okay.shapeStyle:          rectangle
+xmessage*form.okay.background:          #0F0F0F
+xmessage*form.okay.foreground:          #A59451
+xmessage*message*background:            #0F0F0F
+xmessage*background:                    #0F0F0F
+xmessage*foreground:                    #A59461
+xmessage*Scrollbar.width:               1
+xmessage*Scrollbar.borderWidth:         0
+xmessage*Text.?.cursorColor:            #B45B00
+xmessage*Text.borderColor:              #B45B00
+xmessage*Text*background:               #0F0F0F
+xmessage*Command.highlightThickness:    1
+xmessage*Command.internalWidth:         5
+xmessage*Command.internalHeight:        3
+xmessage*Command.borderColor:           #B45B00
+xmessage*Command.shapeStyle:            Rectangle
+xmessage*Command.background:            #0F0F0F
+!xmessage*font:                          xft:Source Code Pro:size=10
+
+
+xscreensaver.splash: false
+
+!font settings
+xscreensaver.Dialog.headingFont:         xft:Source Code Pro:size=9
+xscreensaver.Dialog.bodyFont:            xft:Source Code Pro:size=7
+xscreensaver.Dialog.labelFont:           xft:Source Code Pro:size=7
+xscreensaver.Dialog.unameFont:           xft:Source Code Pro:size=7
+xscreensaver.Dialog.buttonFont:          xft:Source Code Pro:size=7
+xscreensaver.Dialog.dateFont:            xft:Source Code Pro:size=7
+xscreensaver.passwd.passwdFont:          xft:Source Code Pro:size=7
+
+!general dialog box (affects main hostname, username, password text)
+xscreensaver.Dialog.foreground:         #A59461
+xscreensaver.Dialog.background:         #0F0F0F
+xscreensaver.Dialog.topShadowColor:     #0F0F0F
+xscreensaver.Dialog.bottomShadowColor:  #0F0F0F
+xscreensaver.Dialog.Button.foreground:  #A59461
+xscreensaver.Dialog.Button.background:  #0F0F0F
+ 
+!username/password input box and date text colour
+xscreensaver.Dialog.text.foreground:    #B45B00
+xscreensaver.Dialog.text.background:    #0F0F0F
+xscreensaver.Dialog.internalBorderWidth:24
+xscreensaver.Dialog.borderWidth:        0
+xscreensaver.Dialog.shadowThickness:    2
+ 
+!timeout bar (background is actually determined by Dialog.text.background)
+xscreensaver.passwd.thermometer.foreground:  #B45B00
+xscreensaver.passwd.thermometer.background:  #202020
+xscreensaver.passwd.thermometer.width:       8
+ 
+!datestamp format--see the strftime(3) manual page for details
+xscreensaver.dateFormat:    %I:%M%P %a %b %d, %Y
