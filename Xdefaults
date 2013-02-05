@@ -20,10 +20,10 @@ urxvt.internalBorder:    0
 urxvt.cursorBlink:       true
 urxvt.cursorColor:       #a59461
 urxvt.cursorColor2:      #000000
-urxvt.colorBD:           #ffffff
-urxvt.colorIT:           #bbbbbb
-urxvt.colorUL:           #B45B00
-urxvt.underlineColor:    #B45B00
+!urxvt.colorBD:           #ffffff
+!urxvt.colorIT:           #bbbbbb
+!urxvt.colorUL:           #B45B00
+urxvt.underlineColor:    #79220E
 urxvt.borderless:        true 
 
 URxvt.font:               xft:Source Code Pro:size=7
@@ -36,9 +36,9 @@ URxvt.matcher.button:     1
 *background:        #0F0E0F
 *foreground:        #A59461
 
-! Parker Brothers colors
+! Parker Brothers colors (modified)
 !black
-*color0:    #322a2c
+*color0:    #0F0F0F
 *color8:    #46423b
 !red
 *color1:    #79220E
@@ -60,8 +60,8 @@ URxvt.matcher.button:     1
 *color6:    #394745
 *color14:   #393E38
 !white
-*color7:    #AE8842
-*color15:   #A59058
+*color7:    #A59058
+*color15:   #AE8842
 
 xclock*hourColor:       #B45B00
 xclock*minuteColor:     #A59461
