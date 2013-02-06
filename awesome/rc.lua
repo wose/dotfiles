@@ -7,6 +7,9 @@ require("beautiful")
 -- Notification library
 require("naughty")
 
+-- scatch
+local scratch = require("scratch")
+
 -- orglendar
 require("orglendar")
 
@@ -326,10 +329,11 @@ globalkeys = awful.util.table.join(
     awful.key({                   }, "XF86AudioMute",        function () awful.util.spawn_with_shell("amixer -q set Master mute") end),
     awful.key({                   }, "XF86AudioLowerVolume", function () awful.util.spawn_with_shell("amixer -q set Master unmute 5000-") end),
     awful.key({                   }, "XF86AudioRaiseVolume", function () awful.util.spawn_with_shell("amixer -q set Master unmute 5000+") end),
-    awful.key({                   }, "XF86Back",        awful.tag.viewprev       ),
-    awful.key({                   }, "XF86Forward",     awful.tag.viewnext       ),
-    awful.key({ modkey,           }, "Escape",          awful.tag.history.restore),
---    awful.key({ modkey,           }, "F12", function () awful.util.spawn("xlock") end),
+    awful.key({                   }, "XF86Back",             awful.tag.viewprev       ),
+    awful.key({                   }, "XF86Forward",          awful.tag.viewnext       ),
+    awful.key({ modkey,           }, "Escape",               awful.tag.history.restore),
+    awful.key({ modkey,           }, "F12",                  function () scratch.drop("urxvt", "bottom") end),
+    awful.key({ modkey,           }, "F11",                  function () scratch.drop("xcalc", "center", "left", 200, 300) end),
     awful.key({ modkey,           }, "j",
         function ()
             awful.client.focus.byidx( 1)
