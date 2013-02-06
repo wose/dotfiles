@@ -181,6 +181,31 @@ vicious.cache(vicious.widgets.volume)
 awful.widget.layout.margins[volwidget.widget] = { top = 7 }
 vicious.register(volwidget, vicious.widgets.volume, "$1", 1, "Master")
 
+upicon = widget({ type = "imagebox" })
+upicon.image = image(beautiful.widget_netup)
+
+downicon = widget({ type = "imagebox" })
+downicon.image = image(beautiful.widget_netdown)
+
+netwidget = widget({ type = "textbox" })
+vicious.register(netwidget, vicious.widgets.net, '${wlan0 down_kb} ${wlan0 up_kb}', 3)
+
+wifiicon = widget({ type = "imagebox" })
+vicious.register(wifiicon, vicious.widgets.wifi,
+                 function (widget, args)
+                    if args["{linp}"] > 75 then
+                       widget.image = image(beautiful.widget_wifi4)
+                    elseif args["{linp}"] > 50 then
+                       widget.image = image(beautiful.widget_wifi3)
+                    elseif args["{linp}"] > 25 then
+                       widget.image = image(beautiful.widget_wifi2)
+                    else
+                       widget.image = image(beautiful.widget_wifi1)
+                    end
+                 end, 5, "wlan0"
+                )
+
+
 rbracket = widget({ type = "textbox" })
 rbracket.text = "]"
 
@@ -263,7 +288,7 @@ for s = 1, screen.count() do
         myspacer,
         mytextclock,
         myspacer,
-        s == 1 and mysystray or nil,
+--        s == 1 and mysystray or nil,
         mytasklist[s],
         myspacer,
         layout = awful.widget.layout.horizontal.rightleft
@@ -277,7 +302,10 @@ for s = 1, screen.count() do
           space, volicon, space, lbracket, space, volwidget, space, rbracket, space, space,
           layout = awful.widget.layout.horizontal.leftright
        },
-       space, tempwidget, space, tempicon,
+       space, tempwidget, space, tempicon, space, space,
+       space, wifiicon, space, 
+       space, upicon, netwidget, downicon, space,
+
        layout = awful.widget.layout.horizontal.rightleft
     }
 end
