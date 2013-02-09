@@ -98,7 +98,7 @@ mysystray = widget({ type = "systray" })
 mywibox = {}
 wibottom = {}
 myspacer = widget({ type = "textbox" })
-myspacer.text = " | "
+myspacer.text = " :: "
 
 -- CPU usage
 cpuicon = widget({ type = "imagebox" })
