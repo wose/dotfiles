@@ -1,0 +1,8 @@
+
+{ "sheets": [
+      "eye-guide.css",
+      "minibuffer.css",
+      "mode-line.css",
+      "new-tabs.css"
+  ]
+}

@@ -1,0 +1,20 @@
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+#minibuffer-prompt {
+    font: 10px Monospace;
+    font-weight: bold;
+    color: #B45B00;
+}
+
+#minibuffer-input {
+    color: #A59461 !important;
+    font-weight: bold !important;
+}
+
+#minibuffer, #minibuffer-message {
+    background: #0F0F0F;
+    font: 10px Monospace;
+    color: #A59461;
+}
+
