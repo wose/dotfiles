@@ -1,2 +1,8 @@
 fonts
 profile
+url
+backups
+auto-save-list
+eshell
+places
+emacs.d/.*
