@@ -326,9 +326,24 @@ root.buttons(awful.util.table.join(
 globalkeys = awful.util.table.join(
     awful.key({ modkey,           }, "Left",                 awful.tag.viewprev       ),
     awful.key({ modkey,           }, "Right",                awful.tag.viewnext       ),
-    awful.key({                   }, "XF86AudioMute",        function () awful.util.spawn_with_shell("amixer -q set Master mute") end),
-    awful.key({                   }, "XF86AudioLowerVolume", function () awful.util.spawn_with_shell("amixer -q set Master unmute 5000-") end),
-    awful.key({                   }, "XF86AudioRaiseVolume", function () awful.util.spawn_with_shell("amixer -q set Master unmute 5000+") end),
+
+-- FIXME dirty hack to show mute/unmute icons
+    awful.key({                   }, "XF86AudioMute",        
+              function ()
+                 awful.util.spawn_with_shell("amixer -q set Master mute")
+                 volicon.image = image(beautiful.widget_mute)
+              end),
+    awful.key({                   }, "XF86AudioLowerVolume", 
+              function () 
+                 awful.util.spawn_with_shell("amixer -q set Master unmute 5000-")
+                 volicon.image = image(beautiful.widget_vol)
+              end),
+    awful.key({                   }, "XF86AudioRaiseVolume", 
+              function () 
+                 awful.util.spawn_with_shell("amixer -q set Master unmute 5000+")
+                 volicon.image = image(beautiful.widget_vol)
+              end),
+
     awful.key({                   }, "XF86Back",             awful.tag.viewprev       ),
     awful.key({                   }, "XF86Forward",          awful.tag.viewnext       ),
     awful.key({ modkey,           }, "Escape",               awful.tag.history.restore),
